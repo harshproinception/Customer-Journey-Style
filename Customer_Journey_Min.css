@@ -469,38 +469,50 @@ body.theme-entry:has(> form > .runtime-content .runtime-form) > .popupManager > 
 ========================================= */
 
 
+
 @font-face {
     font-family: '29LT Zarid Display Variable';
-    src: url('fonts/29LTZaridDisplayVar-VF.woff2') format('truetype');
-    font-weight: 100 900;
+    src: url('fonts/29LTZaridDisplay-Regular.woff2') format('woff2');
+    font-weight: 400;
     font-display: swap;
 }
 
+@font-face {
+    font-family: '29LT Zarid Display Variable';
+    src: url('fonts/29LTZaridDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Zarid Display Variable';
+    src: url('fonts/29LTZaridDisplay-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'ABC Favorit Arabic Variable';
-    src: url('fonts/ABCFavoritArabicVariable.woff2') format('truetype');
+    src: url('fonts/ABCFavoritArabicVariable.woff2') format('woff2');
     font-weight: 100 900;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Favorit';
-    src: url('fonts/ABCFavoritArabicVariable.woff2') format('truetype');
+    src: url('fonts/ABCFavoritArabicVariable.woff2') format('woff2');
     font-weight: 200 700;
     font-style: normal;
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Zarid Display';
-    src: url('fonts/29LTZaridDisplay-Bold.woff2') format('opentype');
-    font-weight: 300 700;
+    src: url('fonts/29LTZaridDisplay-Bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
-
 
 @font-face {
     font-family: 'SangBleu Kingdom';
