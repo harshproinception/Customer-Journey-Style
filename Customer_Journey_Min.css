@@ -1517,7 +1517,7 @@ body.theme-entry:has(> form > .runtime-content .runtime-form) > .popupManager > 
 
 
 /* RTL */
-html[dir="rtl"] .popup .lyt-messagebox-layout,
+/* html[dir="rtl"] .popup .lyt-messagebox-layout,
 body[dir="rtl"] .popup .lyt-messagebox-layout {
     direction: rtl !important;
     flex-direction: row !important;
@@ -1529,7 +1529,7 @@ body[dir="rtl"] .popup .lyt-messagebox-layout .icon {
     order: 2 !important;
     direction: ltr !important;
     margin: 0 !important;
-}
+} */
 
 html[dir="rtl"] .popup .lyt-messagebox-layout .message,
 body[dir="rtl"] .popup .lyt-messagebox-layout .message {
