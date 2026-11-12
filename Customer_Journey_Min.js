@@ -1105,3 +1105,45 @@ $(document).ready(function () {
 //     }
 // })();
 // /* ===== END Translation.js ===== */
+
+
+
+// Below is the code for hiding the tooltip 
+
+(function () {
+
+    if (window.__K2_NATIVE_TOOLTIP_SUPPRESSION__) {
+        return;
+    }
+
+    window.__K2_NATIVE_TOOLTIP_SUPPRESSION__ = true;
+
+    function suppressTooltip(element) {
+
+        while (element && element !== document) {
+
+            if (
+                element.nodeType === 1 &&
+                element.hasAttribute('title')
+            ) {
+                element.removeAttribute('title');
+            }
+
+            element = element.parentElement;
+        }
+
+    }
+
+    document.addEventListener('pointerover', function (event) {
+
+        suppressTooltip(event.target);
+
+    }, true);
+
+    document.addEventListener('focusin', function (event) {
+
+        suppressTooltip(event.target);
+
+    }, true);
+
+})();
